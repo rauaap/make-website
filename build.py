@@ -46,16 +46,15 @@ def main():
     )
 
     template = (
-        f'''<head>
-        {stylesheets}
-        {scripts}
-        </head>
-        <body>
-            <div class="content">
-                {{}}
-            </div>
-        </body>
-        '''
+        '<head>\n'
+        f'{stylesheets}\n'
+        f'{scripts}\n'
+        '</head>\n'
+        '<body>\n'
+        '<div class="content">\n'
+        '{}\n'
+        '</div>\n'
+        '</body>'
     )
 
     with open(args.markdown_file) as m:
