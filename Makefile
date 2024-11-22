@@ -9,3 +9,6 @@ all:
 		$(BUILD_CMD) $$md_file > $$output_file; \
 	done
 
+clean:
+	find ./html -name "*.html" -type f -exec rm -f {} +
+
